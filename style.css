@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN */
+.preveiw-container{
+  min-height: 100vh;
+  background-color: #3b5d50;
+}
+
+/* NAVBAR */
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6%;
+  color: #fff;
+}
+
+.nav-container h2{
+  font-size: 38px;
+}
+
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.nav-left ul{
+  display: flex;
+  gap: 38px;
+  list-style: none;
+}
+
+.nav-left ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav-left ul li a:hover{
+  border-bottom: 3px solid #f9bf29;
+}
+
+.icons{
+  display: flex;
+  gap: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* MENU ICON */
+.menu-icon{
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* HERO */
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  margin-top: 35px;
+}
+
+.container-left{
+  color: #fff;
+  max-width: 500px;
+  /* margin-top: %; */
+}
+
+.container-left h1{
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.container-left p{
+  color: #cfcfcf;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-shop{
+  background-color: #f9bf29;
+  border: none;
+  font-size: 17px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn-ex{
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 17px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container-right img{
+  width: 700px;
+  
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px){
+
+  .menu-icon{
+    display: block;
+    color: #fff;
+  }
+
+  .nav-left{
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: #3b5d50;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    display: none;
+  }
+
+  .nav-left.active{
+    display: flex;
+  }
+
+  .nav-left ul{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icons{
+    margin-top: 20px;
+  }
+
+  .container{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-left{
+    margin-top: 40px;
+  }
+
+  .container-right img{
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .buttons{
+    justify-content: center;
+  }
+}
